@@ -1,0 +1,30 @@
+import time
+
+def show():
+  # Внутри тела отступ 4 пробела
+  text = 'Hello, Hexlet!'
+  print(text)
+
+
+i=1
+# Вызов функции
+#show_greeting()  # => 'Hello, Hexlet!'
+while i <= 10:
+  mam = str(input("Введите название функции = "))
+
+  if mam == "show":
+    print('Верно. Происходит вызов функции...')
+    time.sleep(1)
+    print('Одну секунду...')
+    time.sleep(2)
+    print('Еще секундочку...')
+    time.sleep(2)
+    print('Выполняем запрос...')
+    show()
+    break
+  else:
+    print('Неверно')
+  i += 1
+
+
+print('Выполняем запрос...')
